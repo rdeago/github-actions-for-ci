@@ -17,12 +17,12 @@ jobs:
           name: webpack artifacts
           path: public/
       - uses: actions/upload-artifact@master
-    needs: build
           name: webpack artifacts
           path: public/
 
   test:
 
+    needs: build
     runs-on: ubuntu-latest
 
     strategy:
